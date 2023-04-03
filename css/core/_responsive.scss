@@ -1,0 +1,117 @@
+@media all and (min-width: 768px) {
+
+    .header {
+        justify-content: center;
+        &_logo{
+            width: 20%;
+        }
+    }
+
+  .nav {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: auto;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 28% 72%;
+        background-color: saddlebrown;
+
+        .aside{
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            }
+
+        .menu {
+            padding: 5px;
+                &_specials{
+                    padding: 0px;
+                .image-cards{
+                    margin: 25px;
+                }
+            }
+        }
+    .footer{
+        width: 100vw;
+    }
+    }          
+}
+
+@media all and (min-width: 1024px) {
+    
+    html {
+        min-height: 100%;
+  position: relative;
+    }
+    
+    .body{
+        margin:auto;
+        background-color: burlywood;
+    }
+    
+    
+    .header{
+        justify-content: center;
+        &_logo{
+            width: 18%;
+        }
+ }
+
+ .nav {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: auto;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        background-color: saddlebrown;
+
+        .aside{
+            display: inline-block;
+            width: 100%;
+            padding: 5px;
+            }
+
+        .menu {
+            padding: 5px;
+                &_specials{
+                    grid-template-columns: 30% 30% 30%;
+                    padding: 0px;
+                .image-cards{
+                    margin: 25px;
+                }
+            }
+        }
+
+        .clasics{
+            grid-template-columns: 30% 30%;
+            justify-content: start;
+        }
+
+        .vegan{
+            display: grid;
+            grid-template-columns: 30% 30%;
+            grid-template-rows: auto;
+            background-color: saddlebrown;
+            padding: 20px;
+        }
+
+        .starters {
+            grid-template-columns: 30% 30% 30%;
+        }
+
+    .footer{
+        width: 100vw;
+    }
+    }          
+}

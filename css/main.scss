@@ -1,0 +1,39 @@
+@import"./core/reset.scss";
+@import"./core/var.scss";
+@import"./sections/header.scss";
+@import"./sections/nav.scss";
+@import"./sections/aside.scss";
+@import"./sections/specials.scss";
+@import"./sections/classics";
+@import"./sections/vegan.scss";
+@import"./sections/starters.scss";
+@import"./sections/footer.scss";
+@import"./core/responsive.scss";
+
+.body{
+    background-color: burlywood;
+}
+
+.main {
+    width: 100%;
+    h3 {
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        padding: 10px;
+        color: antiquewhite;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+}
+
+.tittle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-cards {
+    width: 150px;
+    margin: 10px;
+    border: 4px solid wheat;
+}
