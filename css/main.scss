@@ -4,9 +4,6 @@
 @import"./sections/nav.scss";
 @import"./sections/aside.scss";
 @import"./sections/specials.scss";
-@import"./sections/classics";
-@import"./sections/vegan.scss";
-@import"./sections/starters.scss";
 @import"./sections/footer.scss";
 @import"./core/responsive.scss";
 
@@ -24,7 +21,12 @@
         padding: 10px;
         color: antiquewhite;
         font-family: Georgia, "Times New Roman", Times, serif;
-      }
+
+        // Agrega estilos adicionales para los h3 dentro de .main
+        // Por ejemplo, para hacerlos más oscuros y agregar sombreado:
+        color: #333; // Cambia el color a oscuro
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); // Agrega sombreado
+    }
 }
 
 .tittle {

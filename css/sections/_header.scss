@@ -1,21 +1,74 @@
 .header {
-  width: 100%;
+  background: linear-gradient(135deg, #ffdb58, #ffa200);
+  color: #4c1f0c;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
 
-  h1 {
-    flex-direction: row;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    text-transform: uppercase;
-    font-size: 40px;
-  }
+.header::before,
+.header::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  background: #000;
+  top: 10px;
+  bottom: 10px;
+}
 
-  &_logo {
-    display: flex;
-    width: 30%;
-    margin: 10px;
-  }
+.header::before {
+  left: 10px;
+}
+
+.header::after {
+  right: 10px;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  transition: transform 0.2s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.1);
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-name {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slogan {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #8a582f;
 }
